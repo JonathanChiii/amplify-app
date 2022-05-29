@@ -1,0 +1,12 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Note @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  text: String!
+}
+
+# From AWS tutorial
+# @model: A type annotated with @model is stored in DynamoDB and has CRUDL (create, read, update, delete, list) operations automatically created for it.
+# @auth: A type annotated with @auth is protected by a set of authorization rules. Here, we are using owner authorization to make sure only the owner of a Note will be able to access and modify it.
