@@ -1,0 +1,71 @@
+https://aws.amazon.com/getting-started/guides/deploy-webapp-amplify/module-one/
+
+*************************************************************************************
+npx create-react-app amplify-app
+*************************************************************************************
+
+
+Created git commit.
+
+Success! Created amplify-app at /Users/jonathan/myProject/aws/amplify-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd amplify-app
+  npm start
+
+Happy hacking!
+
+
+*************************************************************************************
+cd amplify-app
+amplify init
+*************************************************************************************
+
+
+Some next steps:
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify add <category>" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify console" to open the Amplify Console and view your project status
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify push" to deploy everything
+
+
+
+*************************************************************************************
+npm start
+*************************************************************************************
+localhost:3000
+*************************************************************************************
+npm add api
+*************************************************************************************
+✅ Some next steps:
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+*************************************************************************************
+After setting up private repo and auto deploy
+*************************************************************************************
+Amplify hosting urls: 
+┌──────────────┬───────────────────────────────────────────┐
+│ FrontEnd Env │ Domain                                    │
+├──────────────┼───────────────────────────────────────────┤
+│ main         │ https://main.dy3ej9pai7nw8.amplifyapp.com │
+└──────────────┴───────────────────────────────────────────┘
